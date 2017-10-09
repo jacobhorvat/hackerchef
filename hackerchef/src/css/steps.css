@@ -1,0 +1,255 @@
+/* Web Fonts   ***********************************/
+
+@font-face {
+  src: url('../fonts/abolition-regular-webfont.eot');
+  src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/abolition-regular-webfont.woff') format('woff'),
+       url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+
+/* Base Styles   ***********************************/
+
+* {
+  box-sizing: border-box;
+}
+
+header{
+  background-color: cyan;
+}
+
+h1{
+  font-size: 5em;
+  color: white;
+  text-align: center;
+
+
+}
+
+p{
+  font-size: 2em;
+  text-align: center;
+  color: white
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  text-align: center;
+}
+
+  input[type="radio"] {
+    display:none;
+  }
+
+  label {
+  width:23%;
+  float:left;
+  text-align:center;
+  background:#ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  color:#222222;
+  padding:0.5%;
+  margin:0.5%;
+  margin-bottom:30px;
+  cursor:pointer;
+  }
+  input[type="radio"][id="veggie"]:checked + label {
+  background:#66dd99;
+  }
+  input[type="radio"][id="veggie"]:checked ~ .pasta, input[type="radio"][id="veggie"]:checked ~ .meat {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+  }
+  input[type="radio"][id="pasta"]:checked + label {
+  background:#6666ff;
+  }
+  input[type="radio"][id="pasta"]:checked ~ .veggie, input[type="radio"][id="pasta"]:checked ~ .meat {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+  }
+  input[type="radio"][id="meat"]:checked + label {
+  background:#ff4466;
+  }
+  input[type="radio"][id="meat"]:checked ~ .veggie, input[type="radio"][id="meat"]:checked ~ .pasta {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+  }
+/* Layout container   ***********************************/
+
+.container{
+  width: 70%;
+  margin: 0 auto;
+  background-color: blue;
+}
+
+/* Classes   ***********************************/
+
+.loginBody{
+  background: #11998e; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right, #11998e, #38ef7d); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #11998e, #38ef7d); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #11998e, #38ef7d); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(right, #11998e, #38ef7d); /* Standard syntax */
+}
+
+.container {
+width:90%;
+margin:0 auto;
+background-color: blue;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #1D976C;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.tile {
+height: 10em;
+width:23%;
+float:left;
+transition:all 1s;
+margin:0.5%;
+padding:0.5%;
+}
+.meat {
+background:#ff4466;
+}
+.veggie {
+background:#66dd99;
+}
+.pasta {
+background:#6666ff;
+}
+
+/* Animations   ***********************************/
+
+
+.headerAnimation {
+
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+
+}
+
+/* IDs   ***********************************/
+
+#navigationBar{
+  list-style-type: none;
+  color: white;
+  border-bottom: solid;
+  border-color: white;
+}
+
+#nav li {
+  display:inline-block;
+  padding: 20px 25px;
+  font-size: 30px
+}
+
+#choose{
+  text-align: center;
+  color: white;
+  font-size: 4em; /* 64px */
+
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media Queries ***************************************/
+
+
+@media only screen and (max-width: 700px){
+
+
+
+
+
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+
+
+
+
+    .responsive {
+        width: 100%;
+    }
+}

@@ -1,0 +1,135 @@
+*{
+  box-sizing: border-box;
+}
+
+/*   NAVIGATION    ***************************/
+
+header{
+  color: white;
+  background-color: #00cc66;
+  text-align: center;
+}
+
+.nav-container{
+  width: 100%;
+  margin:0 auto;
+}
+
+.main-nav li{
+  list-style-type: none;
+}
+.main-nav li a{
+  text-decoration: none;
+  color: white;
+}
+
+/* INGREDIENTS      *******************************/
+
+
+
+.ingredients-list{
+  list-style-type: none;
+}
+.ingredients-list li{
+  display: inline-block;
+}
+
+/* FOOTER     *******************************/
+
+footer{
+  background: #3366cc;
+  color: white;
+}
+
+/*.recipeTitle{
+  margin-bottom: 3px;
+  font-family: fantasy;
+}
+
+.recipeDifficulty{
+  font-size: 1em;
+  margin-top: 0;
+}*/
+
+/*.recipeImage{
+  height: 15em;
+  background-image: linear-gradient(0deg,#fff,transparent),
+                    url(../images/indian-recipes.jpg);
+  background-size: cover;
+}*/
+
+
+@media (min-width:200px) {
+  .logo{
+    font-size: 50px;
+    margin: 0;
+  }
+  .main-nav{
+    margin: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    padding-bottom: 10px;
+  }
+
+  .main-nav li{
+    font-size: 20px;
+    margin: auto;
+    margin: 20px 20px;
+  }
+
+}
+
+@media (min-width:670px) {
+
+/* NAVIGATION       *******************************/
+  header{
+    height: 100px;
+  }
+
+  .logo{
+    display: inline-block;
+  }
+
+  .main-nav{
+    padding-left: 0;
+    display: inline-block;
+  }
+  .main-nav li{
+    display: inline-block;
+
+  }
+
+/* INGREDIENTS      *******************************/
+
+
+
+
+
+/* COOKING TOOLS      *******************************/
+
+  .cooking-tool-container{
+    vertical-align: top;
+    display: inline-block;
+    width: 30%;
+  }
+  .cooking-tool-header{
+    font-size: 1.7rem;
+  }
+  .cooking-list{
+    font-size: 1.5rem;
+  }
+
+  /* DIRECTIONS     *******************************/
+  .directions-header{
+    font-size: 1.7rem;
+  }
+  .directions-list{
+    font-size: 1.5rem;
+  }
+  .directions-container{
+    vertical-align:top;
+    display: inline-block;
+    width: 65%;
+    margin: 0 auto;
+  }
+}
